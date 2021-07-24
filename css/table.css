@@ -1,0 +1,98 @@
+
+
+/* main */
+main{
+    width: 100%;
+    margin-top: 100px;
+}
+
+main h1{
+    text-transform: uppercase;
+    margin-left: 100px;
+}
+
+main .container{
+    padding: 50px 200px;
+}
+
+.container table{
+    width: 100%;
+    text-align: center;
+
+}
+table .full{
+    background-color: #ccc;
+    height: 50px;
+}
+table tr td,
+table tr th{
+    width: 20%;
+    height: 100px;
+}
+
+table tr th{
+    height: 50px;
+}
+
+table tr td img{
+    border: 1px solid black;
+    height: 100%;
+    /* padding: 150px; */
+
+}
+
+table tr td .update{
+    background-color: greenyellow;
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+table tr td .delete{
+    background-color: lightskyblue;
+    border: none;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+table tr td .delete,
+table tr td .update:hover{
+    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.205);
+}
+
+.trong{
+    width: 100%;
+    height: auto;
+}
+
+.trong h1{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-image: linear-gradient(red, rgb(248, 172, 8));
+    margin-bottom: 20px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.trong a{
+/*    text-align: center;*/
+    color: blue;
+    padding-left: 450px;
+}
+
+.trong a:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+

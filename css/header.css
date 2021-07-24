@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* chung */
+.white:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.red:hover{
+    cursor: pointer;
+    color: red;
+}
+
+/* header */
+header{
+    height: 33px;
+    background-color: rgb(37, 37, 37);
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.h-right{
+    display: grid;
+    grid-template-columns: 20px 20px auto;
+    justify-content: start;
+    line-height: 33px;
+    color: #fff;
+}
+
+.h-left{
+    display: grid;
+    justify-content: end;
+    align-items: center;
+}
+
+.l-item{
+    color: white;
+    line-height: 33px;
+}
+
+.scroll{
+    position: fixed;
+    top: 0;
+    transition: all ease 5s;
+}
+
+/* nav */
+nav{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    width: 100%;
+    padding: 7px 60px;
+    height: 80px;
+    background-color: black;
+    z-index: 10;
+}
+
+.nav-img{
+    float: left;
+    width: 65px;
+}
+
+.nav-img img{
+    width: 100%;
+}
+
+.list{
+    float: right;
+}
+#menu{
+    list-style-type: none;
+}
+
+#menu > li{
+    display: inline-block;
+    margin: 0 5px;
+    margin-top: 25px;
+}
+
+#menu > li > a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#menu > li > span{
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+#menu li:hover .subnav{
+    display: block;
+}
+
+#menu .subnav li:hover a,
+#menu> li:hover> a{
+    display: inline-block;
+}
+
+#menu > li > span::after,
+#menu > li >.nav__link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: red; 
+    transition: width .3s;
+}
+#menu > li > span:hover::after,
+#menu > li >.nav__link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+#menu .subnav{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 12;
+}
+
+#menu .subnav{
+    list-style-type: none;
+}
+
+#menu .subnav a{
+    text-decoration: none;
+    color: black;
+    padding: 0 16px;
+    line-height: 30px;
+}
+
+#menu .subnav a:hover{
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+}
+
+.icon-shopping,
+.icon-menu{
+    display: none;
+}

@@ -1,0 +1,408 @@
+
+
+/* banner */
+.banner{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 8;
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.849);
+    cursor: grab;
+    animation: infinite;
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+@keyframes example {
+    0%  {background-image: url("../img/BN1fix.jpg"); background-size: cover;background-repeat: no-repeat;}
+    25%  {background-image: url("../img/BN2fix.jpg"); background-size: cover;background-repeat: no-repeat;}
+    50%  {background-image: url("../img/BN3fix.jpg"); background-size: cover;background-repeat: no-repeat;}
+    75%  {background-image: url("../img/BN1fix.jpg"); background-size: cover;background-repeat: no-repeat;}
+    100%  {background-image: url("../img/BN2fix.jpg"); background-size: cover;background-repeat: no-repeat;}
+}
+
+.banner:active{
+    cursor: grabbing;
+}
+
+.banner .banner-text{
+    position: absolute;
+    bottom: 200px;
+    left: 150px;
+    
+}
+
+.banner h1{
+    color: yellow;
+    margin: 10px 0;
+    font-size: 60px;
+    text-shadow: 0 0 10px yellow;
+}
+
+.banner .banner-text input{
+    width: 100px;
+    height: 30px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.726);
+    background-color: white;
+    cursor: pointer;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.banner .banner-text button{
+    width: 120px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.banner .banner-text input:hover,
+.banner .banner-text button:hover{
+    transition: all 0.5s;
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.301);
+}
+
+/* animation fadeIn */
+.fade_in{
+    animation: fade_in 3s,FadeIn 3s;
+}
+
+@keyframes fade_in{
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+}
+
+/* sản phẩm */
+.sanpham{
+    height: 500px;
+    background-color: #ebebeb;
+    padding: 50px 50px;
+    overflow: hidden;
+}
+
+.sanpham h2{
+    color: #1c1c1c;
+    line-height: 50px;
+}
+
+hr{
+    width: 50px;
+    height: 3px;
+    border: none;
+    background-color: rgb(202, 4, 4);
+}
+
+.tt-sp{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.tt-sp a{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.tt-sp a:hover{
+    border-bottom: 3px solid black;
+}
+
+.tt-sp a:focus{
+    border-bottom: 3px solid black;
+}
+
+.sanpham .sanpham-img{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    row-gap: 60px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.sanpham .trangphuc{
+    position: relative;
+    cursor: grab;
+    background-color: white;
+    width: 221px;
+    height: 325px;
+    padding: 15px;
+    box-shadow: 0 0 2px black;
+    overflow: hidden;
+}
+
+/* inf */
+.info{
+    width: 100%;
+    position:absolute;
+}
+
+.trangphuc > .inf{
+    background:url("../img/cover.PNG");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -100%;
+    opacity: 1;
+    padding: 76px;
+}
+
+.trangphuc .inf  i{
+    font-size: 70px;
+    color: #fff;
+}
+
+.trangphuc .inf  i:hover{
+    color: red;
+}
+
+.sanpham .trangphuc:hover{
+    box-shadow: 0 0 10px black
+}
+
+.sanpham .trangphuc img{
+    cursor: pointer;
+    height: 200px;
+    width: auto;
+}
+
+.sanpham .trangphuc p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sanpham .trangphuc .name:hover{
+    color: red;
+}
+
+/* QC */
+.qc{
+    width: 100%;
+    height: 440px;
+    background-color: #ebebeb;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+/* item1,2 */
+.qc .qc-item2,
+.qc .qc-item1{
+    position: relative;
+    width: 390px;
+    height: 390px;
+    overflow: hidden;
+    margin-right: 19px;
+    box-shadow: 0 0 10px black
+}
+
+.qc .qc-item2 img,
+.qc .qc-item1 img{
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.qc-item2 p,
+.qc-item1 p{
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+.qc-item2 hr,
+.qc-item1 hr{
+    position: absolute;
+    top: 65px;
+    left: 30px;
+}
+/* item3,4 */
+
+.qc  .qc-item3 .qc-item-down,
+.qc .qc-item3 .qc-item-top{
+    position: relative;
+    width: 411px;
+    height: 190px;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+}
+
+.qc  .qc-item3 .qc-item-down{
+    margin-top: 10px;
+}
+
+.qc  .qc-item3 .qc-item-down img,
+.qc .qc-item3 .qc-item-top img{
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.5s;
+    
+}
+
+
+.qc-item3 .qc-item-down p,
+.qc-item3 .qc-item-top p{
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+.qc-item3 .qc-item-down hr,
+.qc-item3 .qc-item-top hr{
+    position: absolute;
+    top: 65px;
+    left: 27px;
+}
+
+
+/* chung cuar item */
+.qc .qc-item-down img:hover,
+.qc .qc-item-top img:hover,
+.qc .qc-item2 img:hover,
+.qc .qc-item1 img:hover{
+    transform: scale(1.1);
+}
+
+.qc-item-down p,
+.qc-item-top p,
+.qc-item2 p,
+.qc-item1 p{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-shadow: 0 0 10px black;
+}
+.qc-item-down hr,
+.qc-item-top hr,
+.qc-item2 hr,
+.qc-item1 hr{
+    width: 70px;
+    height: 4px;
+    border: none;
+    background-color: red;
+}
+
+/* coty */
+.cty{
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.cty img{
+    width: 100%;
+    height: 900px;
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.205);
+    background-image: linear-gradient(red, rgb(248, 172, 8));
+}
+
+.cty .content{
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    color: white;
+}
+
+.cty hr{
+    margin-bottom: 40px;
+}
+
+.cty .content p{
+    font-size: 20px;
+}
+
+.cty .content .td{
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: yellow;
+    text-shadow: 0 0 10px yellow;
+/*    margin-bottom: 10px;*/
+}
+
+.cty .content button{
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: red;
+    margin-top: 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.cty .content button:hover{
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.205);
+}
+
+.pn{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    height: 300px;
+    background-image: url("../img/PN.jpg");
+    background-size: cover;
+    box-shadow: inset 0 0 500px black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.pn h2{
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.pn hr{
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pn .hr2{
+    margin-left: 20px;
+}
+
+.logocty{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: #ebebeb;
+}
+
+.logocty .logo{
+    width: 150px;
+    height: 100px;
+    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+}
+
+.logocty .logo img{
+    width: 100%;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.logocty .logo img:hover{
+    filter: grayscale(0%);    
+}
+
+

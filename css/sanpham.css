@@ -1,0 +1,130 @@
+
+/* Banner */
+
+.banner{
+    position: relative;
+    height: 900px;
+    background-image: url("../images/banner1.jpg");
+    background-size: cover;
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.384);
+    color: #fff;
+    padding: 30px;
+}
+
+.banner h2{
+    margin-bottom: 17px;
+}
+
+.banner p{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.banner p span{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.banner p span:hover{
+    text-shadow: 0 0 10px #fff;
+}
+
+.banner select{
+    position: absolute;
+    right: 100px;
+    top: 30px;
+    height: 50px;
+    border-radius: 30px;
+    outline: 0;
+    color: black;
+}
+
+/* container */
+.container{
+    height: 1090px;
+    background-color: #ebebeb;
+    display: grid;
+    grid-template-columns: 23% 75%;
+    padding: 50px;
+}
+
+.container-list .list-menu h4{
+    text-transform: uppercase;
+}
+
+.container-list .list-menu hr{
+    height: 3px;
+    width: 30px;
+    border: none;
+    background-color: #ccc;
+    margin: 15px 0;
+}
+
+.container-list .list-menu ul li{
+    list-style-type: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.container-list .list-menu ul li:hover{
+    color: red;
+}
+
+/* content */
+.container .container-content .cover-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    row-gap: 20px;
+}
+
+.container .container-content .trangphuc{
+    position: relative;
+    width: 200px;
+    height: 270px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.container .container-content .trangphuc:hover{
+    box-shadow: 0 0 7px black;
+}
+
+.container .container-content .trangphuc img{
+    width: 100%;
+    text-align: center;
+}
+
+.container .container-content .trangphuc p{
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.container .container-content .trangphuc .name:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* inf */
+.trangphuc > .inf{
+    background:url("../img/cover.PNG");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -100%;
+    opacity: 1;
+    padding: 56px;
+    cursor: pointer;
+}
+
+.trangphuc .inf  i{
+    font-size: 70px;
+    color: #fff;
+}
+
+.trangphuc .inf  i:hover{
+    color: red;
+}
